@@ -1,6 +1,6 @@
 package com.ideen.javaCodingTasks;
 
-public class primeNumber {
+public class PrimeNumber {
      /*
         Write a method that can check if a number is prime or not
      */
