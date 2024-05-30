@@ -2,7 +2,7 @@ package com.ideen.javaCodingTasks;
 
 import java.util.Arrays;
 
-public class FindMaximum {
+public class FindMaximumInArray {
     //Write a method that can find the maximum number from an int Array
 
     public static void main(String[] args) {
