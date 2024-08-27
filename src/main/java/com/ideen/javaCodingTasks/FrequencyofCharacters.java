@@ -2,6 +2,8 @@ package com.ideen.javaCodingTasks;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class FrequencyofCharacters {
     /*Write a return method that can find the frequency of characters
@@ -10,6 +12,7 @@ public class FrequencyofCharacters {
     public static void main(String[] args) {
         System.out.println(FrequencyOfChars("AABBCCC"));
         System.out.println(FrequencyOfChars2("AABBCCC"));
+        frequencyofChars4("AAABBCDD");
     }
 
     public static String FrequencyOfChars(String str) {
@@ -46,7 +49,6 @@ public class FrequencyofCharacters {
     }
 
 
-
     //solution 3
     public String frequencyOfChars3(String str) {
         String nonDup = "", result = "";
@@ -62,4 +64,22 @@ public class FrequencyofCharacters {
 
         return result;
     }
+
+    public static void frequencyofChars4(String str) {
+
+        Map<Character, Integer> map = new LinkedHashMap<>();
+
+        for (Character each : str.toCharArray()) {
+            if (map.containsKey(each)) {
+                map.put(each, map.get(each) + 1);
+            } else {
+                map.put(each, 1);
+            }
+        }
+
+        // Printing the result in the desired format
+        map.forEach((k, v) -> System.out.print("" + k + v));
+    }
 }
+
+
