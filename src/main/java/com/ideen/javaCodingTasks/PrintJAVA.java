@@ -2,7 +2,7 @@ package com.ideen.javaCodingTasks;
 
 public class PrintJAVA {
 /*
-FINRA :
+JAVA :
 Write a method which prints out the numbers from 1 to 30 but for numbers which
 are a multiple of 3 print "JA" instead of the number and for numbers which are a
 multiple of 5, print "VA" instead of the number. for numbers which are a multiple of
